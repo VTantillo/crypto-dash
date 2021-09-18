@@ -56,7 +56,7 @@ export const SideNav = (props: SideNavProps) => {
       <LinkWrapper isActive={location.pathname === '/logout'}>
         <LogoutIcon
           onClick={async () => {
-            navigate('/logout')
+            console.log("Eventually I'll log out and reset the things")
           }}
         />
       </LinkWrapper>
@@ -88,6 +88,7 @@ const DashboardIcon = styled(RiHome5Line)<IconProps>`
   width: ${SIZES.navLinkIcon};
   &:hover {
     cursor: pointer;
+    color: ${(props) => props.theme.colors.activeNavLinkIcon};
   }
 `
 
@@ -96,6 +97,7 @@ const ResearchIcon = styled(AiOutlinePieChart)<IconProps>`
   width: ${SIZES.navLinkIcon};
   &:hover {
     cursor: pointer;
+    color: ${(props) => props.theme.colors.activeNavLinkIcon};
   }
 `
 
@@ -104,6 +106,7 @@ const PortfolioIcon = styled(BsBriefcase)<IconProps>`
   width: ${SIZES.navLinkIcon};
   &:hover {
     cursor: pointer;
+    color: ${(props) => props.theme.colors.activeNavLinkIcon};
   }
 `
 
@@ -112,6 +115,7 @@ const SettingsIcon = styled(RiSettingsLine)<IconProps>`
   width: ${SIZES.navLinkIcon};
   &:hover {
     cursor: pointer;
+    color: ${(props) => props.theme.colors.activeNavLinkIcon};
   }
 `
 
@@ -120,5 +124,6 @@ const LogoutIcon = styled(RiLogoutCircleLine)<IconProps>`
   width: ${SIZES.navLinkIcon};
   &:hover {
     cursor: pointer;
+    color: ${(props) => props.theme.colors.activeNavLinkIcon};
   }
 `
