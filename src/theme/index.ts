@@ -18,5 +18,6 @@ export const theme = {
     activeNavLinkBackground: '#372C44',
     activeNavLinkIcon: '#D8BCFF',
     navLinkIcon: '#8D8598',
+    searchBarBackground: '#2F293E',
   },
 }

@@ -9,15 +9,15 @@ export const PAGE_INFO = {
     title: 'Dashboard',
   },
   research: {
-    path: '/',
+    path: '/research',
     title: 'Research',
   },
   portfolio: {
-    path: '/',
+    path: '/portfolio',
     title: 'Portfolio',
   },
   settings: {
-    path: '/',
+    path: '/settings',
     title: 'Settings',
   },
 }

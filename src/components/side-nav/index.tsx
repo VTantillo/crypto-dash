@@ -1,10 +1,10 @@
+import { navigate, useLocation } from '@reach/router'
 import React from 'react'
 import { AiOutlinePieChart } from 'react-icons/ai'
 import { BsBriefcase } from 'react-icons/bs'
 import { RiHome5Line, RiLogoutCircleLine, RiSettingsLine } from 'react-icons/ri'
 import styled from 'styled-components'
-import { useLocation, navigate } from '@reach/router'
-import { SIZES } from '../../constants'
+import { PAGE_INFO, SIZES } from '../../util/constants'
 
 const Wrapper = styled.div`
   grid-area: sidenav;
@@ -13,6 +13,8 @@ const Wrapper = styled.div`
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  border-right-color: ${(props) => props.theme.colors.navLinkIcon};
+  box-shadow: inset -2px 0px 0px ${(props) => props.theme.colors.navLinkIcon};
 `
 
 interface SideNavProps {}
@@ -21,34 +23,34 @@ export const SideNav = (props: SideNavProps) => {
 
   return (
     <Wrapper>
-      <LinkWrapper isActive={location.pathname === '/'}>
+      <LinkWrapper isActive={location.pathname === PAGE_INFO.dashboard.path}>
         <DashboardIcon
           onClick={async () => {
-            navigate('/')
+            navigate(PAGE_INFO.dashboard.path)
           }}
         />
       </LinkWrapper>
 
-      <LinkWrapper isActive={location.pathname === '/research'}>
+      <LinkWrapper isActive={location.pathname === PAGE_INFO.research.path}>
         <ResearchIcon
           onClick={async () => {
-            navigate('/research')
+            navigate(PAGE_INFO.research.path)
           }}
         />
       </LinkWrapper>
 
-      <LinkWrapper isActive={location.pathname === '/portfolio'}>
+      <LinkWrapper isActive={location.pathname === PAGE_INFO.portfolio.path}>
         <PortfolioIcon
           onClick={async () => {
-            navigate('/portfolio')
+            navigate(PAGE_INFO.portfolio.path)
           }}
         />
       </LinkWrapper>
 
-      <LinkWrapper isActive={location.pathname === '/settings'}>
+      <LinkWrapper isActive={location.pathname === PAGE_INFO.settings.path}>
         <SettingsIcon
           onClick={async () => {
-            navigate('/settings')
+            navigate(PAGE_INFO.settings.path)
           }}
         />
       </LinkWrapper>

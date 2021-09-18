@@ -17,3 +17,7 @@ Maybe it could be a paper trading type of thing?
 ## Notes/Ideas
 
 - Something that could go under the settings are which coins you want to track on the dashboard.
+
+## Todo
+
+- [ ] Update Side nav to use the `PAGE_INFO` constant

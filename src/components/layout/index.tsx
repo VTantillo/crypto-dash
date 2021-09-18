@@ -15,7 +15,6 @@ const Wrapper = styled.div`
 `
 
 const Content = styled.div`
-  background-color: green;
   grid-area: content;
 `
 
