@@ -13,3 +13,7 @@ Maybe it could be a paper trading type of thing?
 - Research?
 - Trends?
 - Trade History?
+
+## Notes/Ideas
+
+- Something that could go under the settings are which coins you want to track on the dashboard.

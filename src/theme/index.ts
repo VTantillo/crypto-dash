@@ -15,5 +15,8 @@ export const theme = {
     accentGreen: '#95F6DA',
     white: '#ffffff',
     black: '#000000',
+    activeNavLinkBackground: '#372C44',
+    activeNavLinkIcon: '#D8BCFF',
+    navLinkIcon: '#8D8598',
   },
 }

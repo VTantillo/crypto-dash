@@ -1,9 +1,12 @@
 import React from 'react'
 import styled from 'styled-components'
-import { SearchBar } from '../../search-bar'
+import { SearchBar } from '../search-bar'
 import { RiNotification3Line, RiUser4Line } from 'react-icons/ri'
 
-const Wrapper = styled.div``
+const Wrapper = styled.div`
+  background-color: blue;
+  grid-area: header;
+`
 
 interface HeaderProps {}
 export const Header = (props: HeaderProps) => {
