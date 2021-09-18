@@ -1,7 +1,7 @@
 export const theme = {
   colors: {
     background: '#261E35',
-    cardBackground: '#868B93',
+    cardBackground: '#3C354A',
     green: '#00B929',
     red: '#FF2D2E',
     accent: '#706F74',

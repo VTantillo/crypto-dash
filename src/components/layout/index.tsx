@@ -14,10 +14,6 @@ const Wrapper = styled.div`
     'sidenav content';
 `
 
-const Content = styled.div`
-  grid-area: content;
-`
-
 interface LayoutProps {
   children?: React.ReactElement
 }
@@ -26,7 +22,7 @@ export const Layout = (props: LayoutProps) => {
     <Wrapper>
       <Header />
       <SideNav />
-      <Content>{props.children}</Content>
+      {props.children}
     </Wrapper>
   )
 }

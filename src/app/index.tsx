@@ -6,17 +6,23 @@ import { Portfolio } from './portfolio'
 import { Research } from './research'
 import { Settings } from './settings'
 
+import styled from 'styled-components'
+
+const LayoutRouter = styled(Router)`
+  grid-area: content;
+`
+
 export const App = () => {
   return (
     <Location>
       {() => (
         <Layout>
-          <Router>
+          <LayoutRouter>
             <Dashboard path="/" />
             <Portfolio path="/portfolio" />
             <Research path="/research" />
             <Settings path="/settings" />
-          </Router>
+          </LayoutRouter>
         </Layout>
       )}
     </Location>
