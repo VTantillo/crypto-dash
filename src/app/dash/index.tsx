@@ -7,6 +7,7 @@ import { MarketTrends } from './market-trends'
 import { MyAssets } from './my-assets'
 import { News } from './news'
 import { Ticker } from './ticker'
+import { nomicsApi } from '../../api'
 
 const Wrapper = styled.div`
   display: grid;
@@ -28,8 +29,33 @@ const BottomRow = styled.div`
   grid-column-gap: 20px;
 `
 
+const useCurrenciesTicker = () => {
+  const [ticker, setTicker] = React.useState({})
+  const [isLoading, setIsLoading] = React.useState(true)
+
+  React.useEffect(() => {
+    const fetchTicker = async () => {
+      setIsLoading(true)
+      const query = await nomicsApi.getCurrenciesTicker({})
+      setTicker(query)
+      setIsLoading(false)
+    }
+    fetchTicker()
+  }, [])
+
+  return { ticker, isLoading }
+}
+
 interface DashboardProps extends RouteComponentProps {}
 export const Dashboard = (props: DashboardProps) => {
+  const { ticker, isLoading } = useCurrenciesTicker()
+
+  if (isLoading) {
+    return null
+  }
+
+  console.log(ticker)
+
   return (
     <Wrapper>
       <TopRow>
