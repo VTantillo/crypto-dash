@@ -8,15 +8,13 @@ export const GlobalStyles = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  html {
+  html, body, #root{
     font-family: 'Roboto';
     font-size: 16;
     text-rendering: optimizeLegibility;
     color: ${(props) => props.theme.colors.white};
     background-color: ${(props) => props.theme.colors.background};
-  }
-
-  body, #root {
     min-height: 100vh;
   }
+
 `

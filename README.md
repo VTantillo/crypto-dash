@@ -20,5 +20,3 @@ Maybe it could be a paper trading type of thing?
 - Could try making customizable dashboard thingy on here too
 
 ## Todo
-
-- [x] Update Side nav to use the `PAGE_INFO` constant

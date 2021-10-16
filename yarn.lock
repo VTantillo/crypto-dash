@@ -812,7 +812,7 @@
   dependencies:
     "@babel/plugin-transform-react-jsx" "^7.14.5"
 
-"@babel/plugin-transform-react-jsx-self@^7.14.5":
+"@babel/plugin-transform-react-jsx-self@^7.14.5", "@babel/plugin-transform-react-jsx-self@^7.14.9":
   version "7.14.9"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx-self/-/plugin-transform-react-jsx-self-7.14.9.tgz#33041e665453391eb6ee54a2ecf3ba1d46bd30f4"
   integrity sha512-Fqqu0f8zv9W+RyOnx29BX/RlEsBRANbOf5xs5oxb2aHP4FKbLXxIaVPUiCti56LAR1IixMH4EyaixhUsKqoBHw==
@@ -826,7 +826,7 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.14.5"
 
-"@babel/plugin-transform-react-jsx@^7.12.12", "@babel/plugin-transform-react-jsx@^7.14.5":
+"@babel/plugin-transform-react-jsx@^7.12.12", "@babel/plugin-transform-react-jsx@^7.14.5", "@babel/plugin-transform-react-jsx@^7.14.9":
   version "7.14.9"
   resolved "https://registry.yarnpkg.com/@babel/plugin-transform-react-jsx/-/plugin-transform-react-jsx-7.14.9.tgz#3314b2163033abac5200a869c4de242cd50a914c"
   integrity sha512-30PeETvS+AeD1f58i1OVyoDlVYQhap/K20ZrMjLmmzmC2AYR/G43D4sdJAaDAqCD3MYpSWbmrz3kES158QSLjw==
@@ -2420,6 +2420,20 @@
     "@rollup/pluginutils" "^4.1.1"
     react-refresh "^0.10.0"
 
+"@vitejs/plugin-react@^1.0.4":
+  version "1.0.4"
+  resolved "https://registry.yarnpkg.com/@vitejs/plugin-react/-/plugin-react-1.0.4.tgz#b4e934915205f2b05998019549c853bb1bb1f6c1"
+  integrity sha512-38/w1q2FON4e/es8WnAW0ZOa/RIOoOrpeWNUkgY6+u+M1eQZjyWWI0piLRM6fbDnm8Lm8Qtged8A7OZ/YnkNtw==
+  dependencies:
+    "@babel/core" "^7.15.5"
+    "@babel/plugin-transform-react-jsx" "^7.14.9"
+    "@babel/plugin-transform-react-jsx-development" "^7.14.5"
+    "@babel/plugin-transform-react-jsx-self" "^7.14.9"
+    "@babel/plugin-transform-react-jsx-source" "^7.14.5"
+    "@rollup/pluginutils" "^4.1.1"
+    react-refresh "^0.10.0"
+    resolve "^1.20.0"
+
 "@webassemblyjs/ast@1.9.0":
   version "1.9.0"
   resolved "https://registry.yarnpkg.com/@webassemblyjs/ast/-/ast-1.9.0.tgz#bd850604b4042459a5a41cd7d338cbed695ed964"
@@ -3044,7 +3058,7 @@ babel-plugin-react-docgen@^4.2.1:
     lodash "^4.17.15"
     react-docgen "^5.0.0"
 
-"babel-plugin-styled-components@>= 1.12.0":
+"babel-plugin-styled-components@>= 1.12.0", babel-plugin-styled-components@^1.13.2:
   version "1.13.2"
   resolved "https://registry.yarnpkg.com/babel-plugin-styled-components/-/babel-plugin-styled-components-1.13.2.tgz#ebe0e6deff51d7f93fceda1819e9b96aeb88278d"
   integrity sha512-Vb1R3d4g+MUfPQPVDMCGjm3cDocJEUTR7Xq7QS95JWWeksN1wdFRYpD2kulDgI3Huuaf1CZd+NK4KQmqUFh5dA==
