@@ -1,5 +1,7 @@
 import React from 'react'
+import { useRecoilValue } from 'recoil'
 import styled from 'styled-components'
+import { tickerCryptoState } from '../../../states'
 import { CoinTicker } from './coin-ticker'
 
 const Wrapper = styled.div`
@@ -13,22 +15,12 @@ const Wrapper = styled.div`
 `
 
 export const Ticker = () => {
+  const tickerCoins = useRecoilValue(tickerCryptoState)
   return (
     <Wrapper>
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
-      <CoinTicker />
+      {tickerCoins.map((c) => {
+        return <CoinTicker coin={c} />
+      })}
     </Wrapper>
   )
 }

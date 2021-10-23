@@ -30,8 +30,6 @@ const BottomRow = styled.div`
 
 interface DashboardProps extends RouteComponentProps {}
 export const Dashboard = (props: DashboardProps) => {
-  console.log(import.meta.env.VITE_AV_KEY)
-
   return (
     <Wrapper>
       <TopRow>
